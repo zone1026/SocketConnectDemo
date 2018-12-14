@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "IMNWManager.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[IMNWManager sharedNWManager] initSocketConnect];
 }
 
+- (IBAction)btnConnectTouchUpInside:(UIButton *)sender {
+    [[IMNWManager sharedNWManager].socketConnect connect];
+    
+}
 
 @end

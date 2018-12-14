@@ -13,6 +13,11 @@
 		6069779321C1367200995081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6069779221C1367200995081 /* Assets.xcassets */; };
 		6069779621C1367200995081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6069779421C1367200995081 /* LaunchScreen.storyboard */; };
 		6069779921C1367200995081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6069779821C1367200995081 /* main.m */; };
+		606977A121C136BC00995081 /* IMNWGCDSocketConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 606977A021C136BC00995081 /* IMNWGCDSocketConnect.m */; };
+		606977A621C1379500995081 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 606977A221C1379400995081 /* GCDAsyncSocket.m */; };
+		606977A721C1379500995081 /* IMNWMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 606977A521C1379400995081 /* IMNWMessage.m */; };
+		606977AA21C139B400995081 /* IMNWProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 606977A921C139B400995081 /* IMNWProxy.m */; };
+		606977AD21C13A8500995081 /* IMNWManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 606977AC21C13A8500995081 /* IMNWManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		6069779521C1367200995081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6069779721C1367200995081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6069779821C1367200995081 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6069779F21C136BC00995081 /* IMNWGCDSocketConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNWGCDSocketConnect.h; sourceTree = "<group>"; };
+		606977A021C136BC00995081 /* IMNWGCDSocketConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMNWGCDSocketConnect.m; sourceTree = "<group>"; };
+		606977A221C1379400995081 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		606977A321C1379400995081 /* IMNWMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNWMessage.h; sourceTree = "<group>"; };
+		606977A421C1379400995081 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		606977A521C1379400995081 /* IMNWMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMNWMessage.m; sourceTree = "<group>"; };
+		606977A821C139B400995081 /* IMNWProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNWProxy.h; sourceTree = "<group>"; };
+		606977A921C139B400995081 /* IMNWProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMNWProxy.m; sourceTree = "<group>"; };
+		606977AB21C13A8400995081 /* IMNWManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNWManager.h; sourceTree = "<group>"; };
+		606977AC21C13A8500995081 /* IMNWManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMNWManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,16 @@
 				6069778A21C1367100995081 /* AppDelegate.m */,
 				6069778C21C1367100995081 /* ViewController.h */,
 				6069778D21C1367100995081 /* ViewController.m */,
+				6069779F21C136BC00995081 /* IMNWGCDSocketConnect.h */,
+				606977A021C136BC00995081 /* IMNWGCDSocketConnect.m */,
+				606977A421C1379400995081 /* GCDAsyncSocket.h */,
+				606977A221C1379400995081 /* GCDAsyncSocket.m */,
+				606977A321C1379400995081 /* IMNWMessage.h */,
+				606977A521C1379400995081 /* IMNWMessage.m */,
+				606977A821C139B400995081 /* IMNWProxy.h */,
+				606977A921C139B400995081 /* IMNWProxy.m */,
+				606977AB21C13A8400995081 /* IMNWManager.h */,
+				606977AC21C13A8500995081 /* IMNWManager.m */,
 				6069778F21C1367100995081 /* Main.storyboard */,
 				6069779221C1367200995081 /* Assets.xcassets */,
 				6069779421C1367200995081 /* LaunchScreen.storyboard */,
@@ -141,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606977A721C1379500995081 /* IMNWMessage.m in Sources */,
 				6069778E21C1367100995081 /* ViewController.m in Sources */,
+				606977A621C1379500995081 /* GCDAsyncSocket.m in Sources */,
+				606977A121C136BC00995081 /* IMNWGCDSocketConnect.m in Sources */,
 				6069779921C1367200995081 /* main.m in Sources */,
+				606977AA21C139B400995081 /* IMNWProxy.m in Sources */,
+				606977AD21C13A8500995081 /* IMNWManager.m in Sources */,
 				6069778B21C1367100995081 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
